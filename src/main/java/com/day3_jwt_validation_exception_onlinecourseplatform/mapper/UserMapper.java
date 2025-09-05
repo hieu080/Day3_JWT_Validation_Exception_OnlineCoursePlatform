@@ -10,6 +10,7 @@ import java.util.List;
 
 @Mapper(componentModel = "spring")
 public interface UserMapper {
+    @Mapping(target = "email", ignore = true)
     @Mapping(target = "id", ignore = true)
     @Mapping(target = "courses", ignore = true)
     @Mapping(target = "enrollments", ignore = true)
